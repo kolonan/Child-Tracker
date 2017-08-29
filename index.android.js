@@ -37,7 +37,7 @@ export default class ChildTracker extends Component {
         longitude:0,
       }
     });
-    this.socket = io('https://child-tracker.herokuapp.com')
+    this.socket = io('https://sim800.herokuapp.com')
     this.socket.on('lat',function(data){
       lat = parseFloat(data);
     });
